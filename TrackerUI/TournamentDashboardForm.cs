@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace TrackerUI
 {
-	public partial class CreatePriceForm : Form
+	public partial class TournamentDashboardForm : Form
 	{
-		public CreatePriceForm()
+		public TournamentDashboardForm()
 		{
 			InitializeComponent();
-		}
-
-		private void createPrizeButton_Click(object sender, EventArgs e)
-		{
-			TrackerLibrary.GlobalConfig.Connections();
 		}
 	}
 }

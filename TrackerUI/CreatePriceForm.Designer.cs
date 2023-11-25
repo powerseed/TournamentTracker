@@ -38,7 +38,7 @@
 			prizePercentageValue = new TextBox();
 			prizePercentageLabel = new Label();
 			label1 = new Label();
-			createTeamButton = new Button();
+			createPrizeButton = new Button();
 			SuspendLayout();
 			// 
 			// headerLabel
@@ -139,20 +139,21 @@
 			label1.TabIndex = 15;
 			label1.Text = "-or-";
 			// 
-			// createTeamButton
+			// createPrizeButton
 			// 
-			createTeamButton.FlatAppearance.BorderColor = Color.Silver;
-			createTeamButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(102, 102, 102);
-			createTeamButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(242, 242, 242);
-			createTeamButton.FlatStyle = FlatStyle.Flat;
-			createTeamButton.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-			createTeamButton.ForeColor = Color.FromArgb(51, 153, 255);
-			createTeamButton.Location = new Point(157, 746);
-			createTeamButton.Name = "createTeamButton";
-			createTeamButton.Size = new Size(488, 106);
-			createTeamButton.TabIndex = 19;
-			createTeamButton.Text = "Create Team";
-			createTeamButton.UseVisualStyleBackColor = true;
+			createPrizeButton.FlatAppearance.BorderColor = Color.Silver;
+			createPrizeButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(102, 102, 102);
+			createPrizeButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(242, 242, 242);
+			createPrizeButton.FlatStyle = FlatStyle.Flat;
+			createPrizeButton.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+			createPrizeButton.ForeColor = Color.FromArgb(51, 153, 255);
+			createPrizeButton.Location = new Point(157, 746);
+			createPrizeButton.Name = "createPrizeButton";
+			createPrizeButton.Size = new Size(488, 106);
+			createPrizeButton.TabIndex = 19;
+			createPrizeButton.Text = "Create Prize";
+			createPrizeButton.UseVisualStyleBackColor = true;
+			createPrizeButton.Click += createPrizeButton_Click;
 			// 
 			// CreatePriceForm
 			// 
@@ -160,7 +161,7 @@
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = Color.White;
 			ClientSize = new Size(835, 896);
-			Controls.Add(createTeamButton);
+			Controls.Add(createPrizeButton);
 			Controls.Add(prizePercentageValue);
 			Controls.Add(prizePercentageLabel);
 			Controls.Add(prizeAmountValue);
@@ -172,7 +173,7 @@
 			Controls.Add(placeNumberLabel);
 			Controls.Add(headerLabel);
 			Name = "CreatePriceForm";
-			Text = "CreatePriceForm";
+			Text = "Create Prize";
 			ResumeLayout(false);
 			PerformLayout();
 		}
@@ -189,6 +190,6 @@
 		private TextBox prizePercentageValue;
 		private Label prizePercentageLabel;
 		private Label label1;
-		private Button createTeamButton;
+		private Button createPrizeButton;
 	}
 }
